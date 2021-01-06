@@ -1,6 +1,8 @@
 package jm.task.core.jdbc;
 
 import jm.task.core.jdbc.service.UserServiceImpl;
+import jm.task.core.jdbc.util.Util;
+
 import java.sql.*;
 
 public class Main {
@@ -14,6 +16,7 @@ public class Main {
         System.out.println(service.getAllUsers().toString());
         service.cleanUsersTable();
         service.dropUsersTable();
-        //service.removeUserById(2);
+        // service.removeUserById(14);
+
     }
 }
